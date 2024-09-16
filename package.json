@@ -1,0 +1,58 @@
+{
+  "name": "daviontheme",
+  "displayName": "DavionTheme",
+  "description": "The most orange theme!",
+  "publisher": "MahdiAlavitabar",
+  "version": "0.1.5",
+  "engines": {
+    "vscode": "^1.93.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "themes": [
+      {
+        "label": "Davion Theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/davion-theme-color-theme.json"
+      },
+      {
+        "label": "Davion Theme Brownish",
+        "uiTheme": "vs-dark",
+        "path": "./themes/davion-theme-color-theme-brownish.json"
+      },
+      {
+        "label": "Davion Theme Soft",
+        "uiTheme": "vs-dark",
+        "path": "./themes/davion-theme-color-theme-soft.json"
+      },
+      {
+        "label": "Davion Theme Soren",
+        "uiTheme": "vs-dark",
+        "path": "./themes/davion-theme-color-theme-soren.json"
+      },
+      {
+        "label": "Davion Theme Super Soft",
+        "uiTheme": "vs-dark",
+        "path": "./themes/davion-theme-color-theme-supersoft.json"
+      }
+    ]
+  },
+  "icon": "images/davion.png",
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.93.0",
+    "@types/mocha": "^10.0.7",
+    "@types/node": "20.x",
+    "eslint": "^9.9.1",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1"
+  }
+}
